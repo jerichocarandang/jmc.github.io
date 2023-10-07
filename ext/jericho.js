@@ -1,5 +1,14 @@
+function toggleNav() {
+  const navElement = document.querySelector('nav');
+  navElement.classList.toggle('active');
+}
+window.addEventListener('load', function () {
 
-// Function to check if an element is in the viewport
+    const preloader = document.querySelector('.preloader');
+    preloader.style.display = 'none';
+});
+
+
 function isElementInViewport(element) {
     var rect = element.getBoundingClientRect();
     return (
@@ -10,7 +19,7 @@ function isElementInViewport(element) {
     );
 }
 
-// Function to handle scroll events
+
 function handleScroll() {
     var jobExperienceSection = document.getElementById("job-experience");
     var jobExperienceSection2 = document.getElementById("job-experience2");
@@ -40,12 +49,12 @@ function handleScroll() {
     }
 }
 
-// Add event listener for scroll events
+
 window.addEventListener("scroll", handleScroll);
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Your code here
+
     const navLinks = document.querySelectorAll("nav a");
 
   navLinks.forEach((link) => {

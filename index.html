@@ -8,23 +8,26 @@
     <title>Jericho Carandang | Portfolio</title>
 	<link rel="stylesheet" href="ext/style.css">
 	<link rel="stylesheet" href="ext/button.css">
+	<link rel="stylesheet" href="ext/mobile.css">
 	<script src="ext/jquery-3.6.3.min.js"></script>
 	<script type="text/javascript" src="ext/jericho.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
 	
   </head>
- 
   <body>
+    <div class="preloader">
+        <div class="loader1"></div>
+    </div>
   <header>
-    <nav>
-        <ul>
-			<div class="loader"></div>
-            <li><a href="#about">About</a></li>
-            <li><a href="#job-experience">Work Experience</a></li>
-            <li><a href="#Project">Projects</a></li>
-        </ul>
-    </nav>
+<nav>
+  <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#job-experience">Work Experience</a></li>
+    <li><a href="#Project">Projects</a></li>
+  </ul>
+</nav>
 </header>
     <video id="bg-video" autoplay loop muted>
     <source src="ext/img/background/asdd.mp4" type="video/mp4">
@@ -57,9 +60,6 @@
         </div>
     </div>
 </div>
-
-
-
 <div id="job-experience" class="box">
     <h2>Job Experience</h2>
 			<div class="experience-details">
@@ -93,7 +93,7 @@
 				<section class="bottomsec">
 				
 				<div class="input-container">
-				<input/>
+				<input placeholder="Describe what you want to generate"/>
 				<div id="SUBMITICON">➢ </div>
 				</div>
 				

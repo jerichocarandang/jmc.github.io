@@ -90,7 +90,7 @@
 		}
 
 	@media screen and (max-width: 760px) {
-		.my-image , .my-image1 , .my-image2 , .column-2, .experience-image {
+		.my-image , .my-image1 , .my-image2 , .column-2, .experience-image, {
 		display: none;
 		}
   }
@@ -221,6 +221,15 @@
     transition: opacity 0.5s ease, transform 1.2s ease;
     padding: 30px; 
 }
+@media screen and (max-width: 760px) {
+  #idproj {
+    font-size: 1.5em; /* Adjust the font size for mobile view */
+    text-align: center; /* Center-align the title for mobile view */
+  }
+  #idproj .h2{
+	  margin-left: -10px;
+  }
+}
 
 .experience-details {
     display: flex;
@@ -245,6 +254,26 @@
     max-width: 100%;
     height: auto;
 }
+/* Mobile styles */
+@media screen and (max-width: 760px) {
+  #job-experience,#job-experience2 {
+    padding: 10px; /* Adjust padding for mobile view */
+  }
+
+  .experience-details {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+
+  .experience-text, .experience-text2 {
+    padding-left: 0; /* Remove left padding for mobile view */
+  }
+
+  .experience-image {
+    max-width: 100%; /* Make image full width on mobile */
+    margin-top: 10px; /* Add spacing between image and text */
+  }
+}
+
 
 .project {
 	display: flex;
@@ -328,9 +357,77 @@ nav a {
 }
 
 nav a:hover {
-    color: #0078ba;
+    color: rgb(2, 137, 212);
 }
-	  
+/* Mobile styles */
+@media screen and (max-width: 760px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  nav li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Hamburger menu icon */
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    padding: 10px 20px;
+    color: white;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 761px) {
+  .menu-icon {
+    display: none;
+  }
+}
+/* Preloader styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.loader1 {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
 	 
 	 
 	 
