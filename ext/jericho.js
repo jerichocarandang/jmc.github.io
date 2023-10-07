@@ -45,13 +45,6 @@ window.addEventListener("scroll", handleScroll);
 
 
 document.addEventListener("DOMContentLoaded", function () {
-	    const loadingSpinner = document.querySelector('.loadingspinner');
-    loadingSpinner.style.display = 'none';
-    
-    // Display your website content
-    const content = document.getElementById('content');
-    content.style.display = 'block';
-});
   // Your code here
     const navLinks = document.querySelectorAll("nav a");
 
