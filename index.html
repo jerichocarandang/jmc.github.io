@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+    <title>Jericho Carandang | Portfolio</title>
+	<link rel="stylesheet" href="ext/style.css">
+	<link rel="stylesheet" href="ext/button.css">
+	<script src="ext/jquery-3.6.3.min.js"></script>
+	<script type="text/javascript" src="ext/jericho.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+	
+  </head>
+ 
+  <body>
+  <header>
+    <nav>
+        <ul>
+			<div class="loader"></div>
+            <li><a href="#about">About</a></li>
+            <li><a href="#job-experience">Work Experience</a></li>
+            <li><a href="#Project">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+    <video id="bg-video" autoplay loop muted>
+    <source src="ext/img/background/asdd.mp4" type="video/mp4">
+    <!-- Add additional sources for other video formats if needed -->
+  </video>
+  
+<div id="about" class="about animate__animated animate__fadeInLeft">
+    <h1 class="nameko">Jericho Carandang</h1>
+    <h3 class="webdev">Web Developer</h3>
+    <div class="two-column-layout">
+        <div class="column-1">
+            <p class="p1">For starters, I don't have job experience on web developing.</p>
+				<button id="myemail"><span>Email ➢ </span></button>
+							<script>
+									document.addEventListener("DOMContentLoaded", function () {
+									const myEmailButton = document.querySelector("#myemail");
+									function redirectToEmail() {
+									const email = "jerichom.carandang@gmail.com";
+									const mailtoLink = `mailto:${email}`;
+									window.location.href = mailtoLink;
+									}
+									myEmailButton.addEventListener("click", redirectToEmail);
+									});
+							</script>
+        </div>
+        <div class="column-2">
+            <img src="ext/img/me/ikoy.jpg"  class="my-image animate__animated animate__fadeInLeft">
+            <img src="ext/img/me/profile.jpg"  class="my-image1 animate__animated animate__fadeInLeft">
+            <img src="ext/img/me/ikoy6.png"  class="my-image2 animate__animated animate__fadeInLeft">
+        </div>
+    </div>
+</div>
+
+
+
+<div id="job-experience" class="box">
+    <h2>Job Experience</h2>
+			<div class="experience-details">
+				<div class="experience-text">
+					<p>Honda Philippines INC.,</p>
+					<p>Position - CCTV Staff</p>
+					<p>Date: August 2019 - January 2021</p>
+				</div>
+			<div class="experience-image">
+				<img src="ext/img/me/honda-office.jpg">
+			</div>
+			</div>
+</div></br>
+<div id="job-experience2" class="box2">
+			<div class="experience-details">
+				<div class="experience-text2">
+					<p>Stealth Monitoring Inc.,</p>
+					<p>Position - Alarms and Masking Analyst</p>
+					<p>Date: June 2022 - December 2022</p>
+				</div>
+				<div class="experience-image">
+				<img src="ext/img/me/stealth.png">
+				</div>
+			</div>
+</div>
+
+	<h2 class="box3" id="idproj"> Projects </h2>
+				<div class="project" id="Project">
+				<h3 id="aiproj">AI IMAGE Generator</h3>
+				<section class="image-section"> </section>
+				<section class="bottomsec">
+				
+				<div class="input-container">
+				<input/>
+				<div id="SUBMITICON">➢ </div>
+				</div>
+				
+				</section>
+				
+				</div>
+
+
+	<footer>
+	  <p>&copy; Jericho Carandang</p>
+	</footer>
+
+  </body>
+</html>
