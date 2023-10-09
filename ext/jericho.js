@@ -21,16 +21,27 @@ function isElementInViewport(element) {
 
 
 function handleScroll() {
-    var jobExperienceSection = document.getElementById("job-experience");
+    var jobExperienceSection = document.getElementById("job-experience"); // fadeins //
     var jobExperienceSection2 = document.getElementById("job-experience2");
     var projectTitle = document.getElementById("idproj");
+	var jobTitle = document.getElementById("jobexptitle");
+
 	
+	
+
+	if (isElementInViewport(jobTitle)) {
+        jobTitle.style.opacity = "1";
+        jobTitle.style.transform = "translateY(0)";
+    } else {
+        jobTitle.style.opacity = "0";
+        jobTitle.style.transform = "translateY(50px)";
+    }
     if (isElementInViewport(jobExperienceSection)) {
         jobExperienceSection.style.opacity = "1";
         jobExperienceSection.style.transform = "translateY(0)";
     } else {
         jobExperienceSection.style.opacity = "0";
-        jobExperienceSection.style.transform = "translateY(50px)";
+        jobExperienceSection.style.transform = "translateX(100px)";
     }
 
     if (isElementInViewport(jobExperienceSection2)) {
@@ -38,7 +49,7 @@ function handleScroll() {
         jobExperienceSection2.style.transform = "translateY(0)";
     } else {
         jobExperienceSection2.style.opacity = "0";
-        jobExperienceSection2.style.transform = "translateY(50px)";
+        jobExperienceSection2.style.transform = "translateX(100px)";
     }
 	if (isElementInViewport(projectTitle)) {
         projectTitle.style.opacity = "1";
@@ -75,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   
-  const API_KEY = "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";
+  const API_KEY = "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";
   const submitIcon = document.querySelector("#SUBMITICON");
   const inputElement = document.querySelector("input");
   const imageSection = document.querySelector('.image-section')
