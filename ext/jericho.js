@@ -25,7 +25,8 @@ function handleScroll() {
     var jobExperienceSection2 = document.getElementById("job-experience2");
     var projectTitle = document.getElementById("idproj");
 	var jobTitle = document.getElementById("jobexptitle");
-
+	var skillTitle = document.getElementById("skillTitle");
+	var skill = document.getElementById("skills");
 	
 	
 
@@ -58,6 +59,20 @@ function handleScroll() {
         projectTitle.style.opacity = "0";
         projectTitle.style.transform = "translateY(50px)";
     }
+	if (isElementInViewport(skillTitle)) {
+        skillTitle.style.opacity = "1";
+        skillTitle.style.transform = "translateY(0)";
+    } else {
+        skillTitle.style.opacity = "0";
+        skillTitle.style.transform = "translateY(50px)";
+    }
+	if (isElementInViewport(skill)) {
+        skill.style.opacity = "1";
+        skill.style.transform = "translateY(0)";
+    } else {
+        skill.style.opacity = "0";
+        skill.style.transform = "translateX(100px)";
+    }
 }
 
 
@@ -86,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   
-  const API_KEY = "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";
+  const API_KEY = "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";
   const submitIcon = document.querySelector("#SUBMITICON");
   const inputElement = document.querySelector("input");
   const imageSection = document.querySelector('.image-section')
@@ -100,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       body: JSON.stringify({
         prompt: inputElement.value,
-        n: 4,
+        n: 2,
         size: "1024x1024",
       }),
     };

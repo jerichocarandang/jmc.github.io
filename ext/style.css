@@ -133,8 +133,14 @@
 .my-image:hover,
 .my-image1:hover,
 .my-image2:hover,
-.experience-image:hover {
+.experience-image:hover,
+#css:hover,
+#cpp:hover,
+#html:hover {
   transform: scale(1.12);
+}
+#css, #cpp, #html{
+transition: transform 0.4s ease;
 }
 }
 .container {
@@ -164,7 +170,7 @@
 }
 .box {
     background-color: rgba(0, 0, 0, .3);
-    border-radius: 80px;
+    border-radius: 45px;
     box-shadow: 0 8px 10px rgba(100, 255, 255, .7);
     padding: 5px;
     margin: 5px;
@@ -172,7 +178,7 @@
 }
 .box2 {
     background-color: rgba(0, 0, 0, .3);
-    border-radius: 80px;
+    border-radius: 45px;
     box-shadow: 0 8px 10px rgba(100, 255, 255, .7);
     padding: 5px;
     margin: 5px;
@@ -181,7 +187,7 @@
 }
 .box3 {
     background-color: rgba(0, 0, 0, .3);
-    border-radius: 80px;
+    border-radius: 45px;
     box-shadow: 0 8px 10px rgba(100, 255, 255, .7);
     padding: 5px;
     margin: 5px;
@@ -190,13 +196,22 @@
 }
 #skills {
     background-color: rgba(0, 0, 0, .3);
-    border-radius: 80px;
+    border-radius: 45px;
     box-shadow: 0 8px 10px rgba(100, 255, 255, .7);
     padding: 5px;
     margin: 5px;
-	width: calc(40% - 5px); 
-	margin-top: 10px;
+	width: calc(35% - 5px); 
+	margin-top: 5px;
+	transition: opacity 0.5s ease, transform 1.2s ease;
 }
+@media screen and (max-width: 760px) {
+  #html, #css, #cpp, #soon {
+    width: 50px; /* Set a smaller width for mobile view */
+    height: 50px; /* Set a smaller height for mobile view */
+	align-items: center;
+  }
+}
+
 
 
 .box h2 {
@@ -215,12 +230,12 @@
     margin: 8px;
 }
 #job-experience{
-	margin-top: 20px
+	margin-top: 20px;
 }
 #jobexptitle{
 	margin-bottom: -20px;
 }
-#job-experience, #job-experience2, #idproj, #jobexptitle  {
+#job-experience, #job-experience2, #idproj, #jobexptitle, #skillTitle  {
     opacity: 0;
     transform: translateX(200px);
     transition: opacity 0.5s ease, transform 1.2s ease;
@@ -439,7 +454,6 @@ nav a:hover {
     display: none;
   }
 }
-
 
 
 
