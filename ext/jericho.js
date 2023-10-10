@@ -1,3 +1,4 @@
+
 function toggleNav() {
   const navElement = document.querySelector('nav');
   navElement.classList.toggle('active');
@@ -101,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   
-  const API_KEY = "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";
+  const API_KEY = process.env.MY_API_KEY;
   const submitIcon = document.querySelector("#SUBMITICON");
   const inputElement = document.querySelector("input");
   const imageSection = document.querySelector('.image-section')
