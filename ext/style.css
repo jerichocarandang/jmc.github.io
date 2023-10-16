@@ -26,7 +26,7 @@
 	  }
 	  .column-1 p {
 		  margin-top:8px;
-		  		  text-align:left;
+		  text-align:left;
 		  font-family: Arial, Helvetica, sans-serif;
 		  text-shadow: 10px 10px 10px rgba(1, 1, 1, 1);
 		  margin-left: 20px;
@@ -390,12 +390,10 @@ nav a {
 nav a:hover {
     color: rgb(2, 137, 212);
 }
-/* Mobile styles */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 800px) {
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 60px; 
     left: 0;
